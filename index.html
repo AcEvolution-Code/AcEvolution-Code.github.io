@@ -1,5 +1,11 @@
-<script language="JavaScript">
-var la=navigator.browserLanguage.toLowerCase();
-if(la=='zh-cn') window.location.replace('cn');
-else window.location.replace('en');
+<script type="text/javascript">
+　　var language = window.navigator.userLanguage || window.navigator.language;
+　　var lang = language.substr(0, 2);
+　　if (lang == "zh"){
+　　    window.location.replace('cn');
+　　}else if (lang == "en"){
+   　　 window.location.replace('en');
+　　}else{
+   　　 window.location.replace('en');
+　　};
 </script>
